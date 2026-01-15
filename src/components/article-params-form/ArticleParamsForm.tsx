@@ -42,6 +42,7 @@ export const ArticleParamsForm = ({ onUpdate }: ArticleParamsFormProps) => {
 	const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
 		onUpdate(formState);
+		setIsOpen(false);
 	};
 
 	const handleReset = () => {
